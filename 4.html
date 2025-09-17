@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Generated Page</title>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="global.css">
+  <style id="sections-styles">
+/* CSS for section section:main */
+#main-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.contact-card {
+  max-width: 420px;
+  width: 100%;
+  height: 594px;
+  background-color: var(--color-background);
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+}
+
+.hamburger-menu {
+  position: absolute;
+  top: 12px;
+  left: 15px; /* Figma x: 1395 - 1380 = 15 */
+  width: 34px;
+  height: 27px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.hamburger-menu__bar {
+  width: 100%;
+  height: 7px;
+  background-color: var(--color-accent);
+}
+
+.contact-info {
+  position: absolute;
+  top: 260px;
+  left: 124px; /* Figma x: 1504 - 1380 = 124 */
+  width: 171px;
+}
+
+.contact-info__item {
+  color: var(--color-text);
+  font-family: var(--font-primary);
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 13.3125px;
+  text-align: left;
+}
+
+.contact-info__item:not(:last-child) {
+  margin-bottom: 13.3125px; /* Equivalent to one line-height, for the double newline */
+}
+
+@media (max-width: 480px) {
+  #main-content {
+    padding: 0;
+  }
+
+  .contact-card {
+    max-width: 100%;
+    height: 100vh;
+    box-shadow: none;
+  }
+
+  /* On smaller screens, the absolute positioning might cause overflow.
+     This is a direct translation of the design, but for a real-world scenario,
+     a more fluid layout would be recommended. */
+}
+  </style>
+  <script src="global.js" defer></script>
+</head>
+<body>
+<section id="main-content">
+  <div class="contact-card">
+    <div class="hamburger-menu" role="button" aria-label="Toggle Menu">
+      <div class="hamburger-menu__bar"></div>
+      <div class="hamburger-menu__bar"></div>
+      <div class="hamburger-menu__bar"></div>
+    </div>
+    <main class="contact-info">
+      <p class="contact-info__item">EMAIL:setthawut.tac@gmail.com</p>
+      <p class="contact-info__item">เบอร์โทร:095-8983090</p>
+      <p class="contact-info__item">IG:o2_st07</p>
+    </main>
+  </div>
+</section>
+</body>
+</html>
